@@ -25,7 +25,7 @@ function verificarIntento() { // SE DEFINE
         }
         intentos++;
         if (intentos == 3) {
-            asignarTextoElemento('p', 'Es tu ultima chance')
+            asignarTextoElemento('p', `Esta es tu última chance, el numero es ${(numeroDeUsuario < numeroSecreto) ? 'mayor' : 'menor'}`)
         } 
         if (intentos == 4) {
             asignarTextoElemento('p', `Juego Terminado. El numero era ${numeroSecreto}`)
